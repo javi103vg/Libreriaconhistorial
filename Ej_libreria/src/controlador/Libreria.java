@@ -166,7 +166,7 @@ public class Libreria {
         if (texto == null || texto.isEmpty()) return false;
         return Pattern.matches("[0-9]+", texto);
     }
-
+    
     public static boolean validarISBNlibreria(String isbn) {
         if (isbn == null) return false;
         return isbn.length() == 13 && isNumber(isbn);
